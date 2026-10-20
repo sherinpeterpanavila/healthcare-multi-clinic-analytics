@@ -32,3 +32,28 @@ CREATE TABLE appointments (
     FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
 );
 
+INSERT INTO patients
+(first_name,last_name,gender,dob,city,phone)
+VALUES
+('Akhil','Raj','Male','1995-03-10','Kochi','9876543210'),
+('Neha','Paul','Female','1998-07-21','Trivandrum','9876543211'),
+('Arjun','Nair','Male','1988-11-05','Kozhikode','9876543212'),
+('Maria','Thomas','Female','1992-09-15','Kottayam','9876543213'),
+('Kevin','George','Male','1999-02-12','Thrissur','9876543214');
+
+INSERT INTO doctors (doctor_name, specialty, experience)
+VALUES
+('Dr. John Mathew','Cardiology',12),
+('Dr. Susan George','Dermatology',8),
+('Dr. Rahul Menon','Orthopedics',15),
+('Dr. Anjali Nair','Pediatrics',10),
+('Dr. Joseph Thomas','Neurology',18);
+
+INSERT INTO appointments
+(patient_id,doctor_id,appointment_date,diagnosis,bill_amount)
+VALUES
+(1,1,'2026-01-10','Hypertension',1500),
+(2,2,'2026-01-11','Skin Allergy',1200),
+(3,3,'2026-01-12','Fracture',3500),
+(4,4,'2026-01-13','Fever',900),
+(5,5,'2026-01-14','Migraine',2000);

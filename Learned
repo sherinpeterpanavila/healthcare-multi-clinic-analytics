@@ -1,3 +1,6 @@
 
  ## This records all Python packages needed to run the project.
   # py -m pip freeze > requirements.txt  
+
+  Why did you create db_connection.py?
+  "I centralized the database connection logic into a reusable utility function. This avoids duplicating connection code across multiple ETL scripts and makes maintenance easier. If the database credentials change, I only need to update one configuration file."
