@@ -1,8 +1,13 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
-    "password": "Root@123",
-    "port": 3306
+    "host": os.getenv("MYSQL_HOST", "localhost"),
+    "user": os.getenv("MYSQL_USER", "root"),
+    "password": os.getenv("MYSQL_PASSWORD"),
+    "port": int(os.getenv("MYSQL_PORT", "3306"))
 }
 
 CLINICS = [

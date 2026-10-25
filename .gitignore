@@ -5,3 +5,7 @@ __pycache__/
 .idea/
 data/raw/*.csv
 data/processed/*.csv
+data/*.duckdb
+
+data/
+logs/

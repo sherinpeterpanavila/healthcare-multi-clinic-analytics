@@ -21,6 +21,7 @@ for clinic in CLINICS:
 
     try:
         connection = get_connection(clinic)
+        print(clinic + " Connected Successfully!")
 
         for table in TABLES:
 
